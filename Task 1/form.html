@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .required {
+        color: red;
+    }
+</style>
+
+<body>
+    <form action="backend.php">
+        <h3>Task1 HTML Form</h3>
+        <div>
+            <label for="name">Name</label><span class="required">*</span>
+            <input type="text" name="myname" id="name" placeholder="Your Name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role</label><span class="required">*</span>
+            <input type="text" name="myrole" placeholder="Your Role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email " name="myemail" placeholder="Your Mail Id">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label><span class="required">*</span>
+            <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            <label for="phone"> Phone Number</label><span class="required">*</span>
+            <input type="tel" name="phone number" required>
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="myeligibility">
+        </div>
+        <br>
+        <div>
+            <label for="Mobile">Choose a mobile:</label>
+            <select name="mobile" id="mobile">
+            <option value="Iphone">iphone</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Realme"> Realme</option>
+            <option value="Vivo">Vivo</option>
+            <option value="Oppo">oppo</option>
+            <option value="honor">honor</option>
+        </select>
+        </div>
+
+        <div>
+            <p>Gender</p>
+            <input type="radio" name="mygender" value="Male">
+            <label for="gender">Male</label>
+
+            <input type="radio" name="mygender" value="Female">
+            <label for="gender">Female</label>
+
+            <input type="radio" name="mygender" value="Other">
+            <label for="gender">Other</label>
+
+        </div>
+        <br>
+        <div>
+            <p>Choose your favorite</p>
+            <input type="radio" name="fav" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="fav" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="fav" value="JavaScript">
+            <label for="js">JavaScript</label>
+        </div>
+        <div>
+            <p>Write something about yourself :</p> <br> <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <p>Upload Resume</p>
+            <label for="file">Select a file</label>
+            <input type="file" name="file" value="file" multiple>
+        </div>
+        <br>
+        <div>
+            <input type="Submit" value="Submit Now">
+            <input type="Reset" value="Reset Now">
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

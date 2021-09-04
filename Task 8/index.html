@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS.js"></script>
+
+</head>
+
+<body>
+    <div class="fo">
+        <h2 class="h">Account Creation Form</h2>
+        <form action="#" class="form">
+            <div class="fe">
+                <label for="name"> <h3>Account Holder Name: </h3>
+                <input type="text" id='name' placeholder="Enter Your name">
+            </label>
+            </div>
+            <div class="fe">
+                <label for="name"> <h3>Father's Name: </h3>
+                <input type="text" name="Father Name" id="fname" placeholder='Enter Your Father Name'>
+            </div>
+            <div class="fe">
+                <label for="name"><h3>Registered Mobile Number:</h3>
+                <input type="number" name="mobile no" id="mno" placeholder='Enter Your Mobile No.'>
+            </div>
+            <div class="fe">
+               <label for="accs" ><h3>Account Type:</h3></label>
+                <select name="" id="accs">
+                <option value="Current Account">Current Account</option>
+                <option value="Saving Account">Saving Account</option>
+                <option value="Salary Account">Salary Account</option>
+                <option value="Fixed Deposite">Fixed Deposite</option>
+                <option value="NRI Account">NRI Account</option>
+            </select>
+                <button type="button" onclick="add()"> Submit</button>
+            </div>
+
+            <div class="fe" id="btn">
+
+            </div>
+        </form>
+
+    </div>
+    <div class="ta">
+        <table id='table' onclick="selectText()">
+            <tr>
+                <td>Name</td>
+                <td>Father Name</td>
+                <td>Mobile No.</td>
+                <td>Account Type</td>
+                <td>Delete</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>

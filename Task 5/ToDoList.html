@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>To Do List</h1>
+</head>
+
+<body>
+
+    <input type="text" id="candidate" placeholder="Write work here" />
+    <button onclick="add()">
+Add item</button>
+    <button onclick="remove()">
+Remove item</button>
+
+
+    <ul id="list"></ul>
+
+    <script>
+        function add() {
+            var a = document.getElementById("list");
+            var candidate = document.getElementById("candidate");
+            var li = document.createElement("li");
+            li.setAttribute('id', candidate.value);
+            li.appendChild(document.createTextNode(candidate.value));
+            // a.appendChild(li);
+            if (candidate.value === '') {
+                alert("Add some work to be done.!");
+            } else {
+                document.getElementById("list").appendChild(li);
+            }
+            document.getElementById("candidate").value = '';
+        }
+
+
+        function remove() {
+            var a = document.getElementById("list");
+            var candidate = document.getElementById("candidate");
+            var item = document.getElementById(candidate.value);
+            a.removeChild(item);
+            document.getElementById("candidate").value = '';
+        }
+    </script>
+</body>
+
+</html>

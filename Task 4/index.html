@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="JS.js">
+    </script>
+    <title>JS Events</title>
+
+</head>
+
+<body>
+    <div>
+        <b>Enter first Number: </b><br>
+        <input type="text" id="Num1" /><br>
+        <b>Enter second Number: </b><br>
+        <input type="text" id="Num2" /><br><br>
+
+
+    </div>
+
+    <div>
+        <select name="Operation" id="dropdown">
+                <option value="add">Addition </option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Division</option>
+               
+            </select>
+    </div>
+    <br>
+
+    <div>
+        <button class="button" onclick="document.getElementById('demo').innerHTML = operation()">Submit</button>
+        <button class="button" onclick="fun()">Reset</button>
+
+
+
+
+
+
+    </div>
+    <span id="submit"></span>
+    </div>
+    <p id="demo"></p>
+
+
+</body>
+
+</html>
